@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /* Vertically center the content */
+  padding: 5px;
+  background-color: #ffffe0; /* Light yellow */
+  height: 60px;  /* Adjust the height of the header if needed */
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;  /* Vertically center the links */
+}
+
+nav a {
+  margin: 0 10px;  /* Add space between the links */
+  text-decoration: none;
+}
+
+
+hr {
+  border: none;          /* Remove the default border */
+  height: 1px;           /* Set the height of the divider to make it thicker */
+  background-color: black; /* Choose a color for the divider */
+  margin: 0;             /* Remove any default margin */
+}
+
+
+/* Global font styling for the entire app */
+body {
+  font-family: Arial, sans-serif; /* Set the global font */
+}
+
+/* Contact page specific styles */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;  /* Center content on the page */
+}
+
+.contact-box {
+  background-color: #e6f0ff; /* Light blue background color */
+  padding: 20px;
+  border: 1px solid #000;  /* Black border */
+  text-align: center;
+  width: 300px;
+}
+
+/* General text styling for consistency */
+.contact-box p {
+  margin: 0;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
