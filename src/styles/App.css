@@ -1,3 +1,10 @@
+/* Global App Styles */
+body {
+  font-family: Tahoma, sans-serif;  /* Set the global font */
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -13,79 +20,78 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+/* Header and Navigation Styling */
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;  /* Vertically center the content */
-  padding: 5px;
-  background-color: #ffffe0; /* Light yellow */
-  height: 60px;  /* Adjust the height of the header if needed */
-  margin-bottom: 0;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #ffffe7;
+  height: 60px;
+  font-family: Tahoma, sans-serif;  /* Set Tahoma for the header */
+}
+
+.header h2 {
+  margin-left: 20px;
 }
 
 nav {
   display: flex;
-  align-items: center;  /* Vertically center the links */
+  align-items: center;
+  margin-right: 10px;
 }
 
 nav a {
-  margin: 0 10px;  /* Add space between the links */
+  margin: 0 10px;
   text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: gray;
+}
 
 hr {
-  border: none;          /* Remove the default border */
-  height: 1px;           /* Set the height of the divider to make it thicker */
-  background-color: black; /* Choose a color for the divider */
-  margin: 0;             /* Remove any default margin */
+  border: none;
+  height: 1.4px;
+  background-color: black;
+  margin: 0;
 }
 
-
-/* Global font styling for the entire app */
-body {
-  font-family: Arial, sans-serif; /* Set the global font */
-}
-
-/* Contact page specific styles */
-.contact-container {
+/* Contact and Box Styles */
+.main-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80vh;  /* Center content on the page */
+  align-items: flex-start;
+  min-height: 80vh;
+  padding: 40px;
+}
+
+.centered-box, .contact-box {
+  background-color: #e6f0ff;
+  padding: 20px;
+  border: 1px solid #000;
+  width: 780px;
+}
+
+.centered-box {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
 .contact-box {
-  background-color: #e6f0ff; /* Light blue background color */
-  padding: 20px;
-  border: 1px solid #000;  /* Black border */
   text-align: center;
-  width: 300px;
 }
 
-/* General text styling for consistency */
-.contact-box p {
+.centered-box p, .centered-box h2, .contact-box p {
   margin: 0;
   padding: 5px;
   font-size: 16px;
 }
 
-
+/* Keyframe for App-logo animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

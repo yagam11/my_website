@@ -1,14 +1,14 @@
 import React from 'react';
 
-function Projects() {
+const Background = () => {
   return (
     <div className="main-container"> {/* Changed the outer container class name */}
       <div className="centered-box">  {/* Changed the box class name */}
-        <h2>Project</h2>
-        <p>below are projects</p>
+        <h2>Background</h2>
+        <p>Background of this page is __</p>
       </div>
     </div>
   );
-}
+};
 
-export default Projects;
+export default Background;

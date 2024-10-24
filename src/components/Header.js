@@ -5,11 +5,12 @@ import '../styles/App.css';
 function Header() {
   return (
     <header className="header">
-      <h2 style={{ marginLeft: '20px', fontFamily: "'Montserrat', sans-serif" }}>Tianchi Huang</h2>
-      <nav style={{ marginRight: '20px' }}>
-        <Link to="/" style={{ margin: '10px' }}>Home</Link>
-        <Link to="/projects" style={{ margin: '10px' }}>Projects</Link>
-        <Link to="/contact" style={{ margin: '10px' }}>Contact</Link>
+      <h2>Tianchi Huang</h2>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/background">Background</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </header>
   );
