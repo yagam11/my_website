@@ -9,7 +9,7 @@ function Home() {
         <p>Before coming to Brown. I was a APMA-CS student at Boston University.</p>
       </div>
     </div>
-  );
+  )
 }
 
 export default Home;
