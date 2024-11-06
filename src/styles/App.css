@@ -1,6 +1,10 @@
-/* Global App Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+/* Global Styles */
 body {
-  font-family: Tahoma, sans-serif;  /* Set the global font */
+  font-family: Tahoma, sans-serif; /* Set global font */
   margin: 0;
   padding: 0;
 }
@@ -20,7 +24,7 @@ body {
   }
 }
 
-/* Header and Navigation Styling */
+/* Header and Navigation */
 .header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +32,7 @@ body {
   padding: 5px 20px;
   background-color: #ffffe7;
   height: 60px;
-  font-family: Tahoma, sans-serif;  /* Set Tahoma for the header */
+  font-family: Tahoma, sans-serif;
 }
 
 .header h2 {
@@ -59,7 +63,7 @@ hr {
   margin: 0;
 }
 
-/* Contact and Box Styles */
+/* Main Container and Box Styles */
 .main-container {
   display: flex;
   justify-content: center;
@@ -72,13 +76,8 @@ hr {
   background-color: #e6f0ff;
   padding: 20px;
   border: 1px solid #000;
-  width: 780px;
-}
-
-.centered-box {
+  width: 850px;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: auto;
 }
 
 .contact-box {
@@ -91,7 +90,53 @@ hr {
   font-size: 16px;
 }
 
-/* Keyframe for App-logo animation */
+/* Education Section */
+.education-heading {
+  /* font-family: 'Playfair', sans-serif; */
+  /* font-size: 1.5em; */
+  margin-top: 50px;
+}
+
+.education-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.school-badge {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 35px;
+}
+
+/* School Information Styling */
+.school-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.school-name {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.school-location,
+.school-major,
+.school-timeline {
+  font-size: 0.9em;
+  color: #555;
+  margin: 2px 0;
+}
+
+.school-timeline {
+  color: #666;
+}
+
+/* Keyframe Animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -5,7 +5,7 @@ function Projects() {
     <div className="main-container"> {/* Changed the outer container class name */}
       <div className="centered-box">  {/* Changed the box class name */}
         <h2>Project</h2>
-        <p>below are projects</p>
+        <p>Projects are below (coming soon)</p>
       </div>
     </div>
   );
